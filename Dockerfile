@@ -1,5 +1,5 @@
 # Set the base image
-FROM debian:wheezy
+FROM ubuntu:14.04
 
 # File Author / Maintainer 
 MAINTAINER Arnaud Meng <arnaud.meng@gmail.com>
