@@ -10,6 +10,7 @@ source: http://hibberdlab.com/transrate/
 
 # help:
 
+```h
 Transrate v1.0.3
 by Richard Smith-Unna, Chris Boursnell, Rob Patro,
    Julian Hibberd, and Steve Kelly
@@ -37,3 +38,4 @@ OPTIONS:
   --loglevel=<s>            Log level. One of [error, info, warn, debug] (default: info)
   --install-deps=<s>        Install any missing dependencies. One of [ref]
   --examples                Show some example commands with explanations
+```
