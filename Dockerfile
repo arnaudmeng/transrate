@@ -21,8 +21,8 @@ RUN chmod a+xr -R /usr/bin/transrate-1.0.3-linux-x86_64/
 RUN /usr/bin/transrate-1.0.3-linux-x86_64/transrate --install-deps ref
 
 # add to path
-RUN echo "PATH=$PATH:/user/bin/transrate-1.0.3-linux-x86_64" >> /etc/profile
-RUN echo "PATH=$PATH:/user/bin/transrate-1.0.3-linux-x86_64/bin" >> /etc/profile
+ENV PATH="/user/bin/transrate-1.0.3-linux-x86_64:${PATH}"
+ENV PATH="/user/bin/transrate-1.0.3-linux-x86_64/bin:${PATH}"
 
 # clean
 RUN apt-get clean
