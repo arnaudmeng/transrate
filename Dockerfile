@@ -1,5 +1,5 @@
-# Set the base image 
-FROM centos:6
+# Set the base image Ubuntu 14.04
+FROM ubuntu:14.04
 
 # File Author / Maintainer 
 MAINTAINER Arnaud Meng <arnaud.meng@gmail.com>
