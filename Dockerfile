@@ -1,5 +1,5 @@
-# Set the base image Debian
-FROM debian:wheezy
+# Set the base image Ubuntu 14.04
+FROM ubuntu:14.04
 
 # File Author / Maintainer 
 MAINTAINER Arnaud Meng <arnaud.meng@gmail.com>
