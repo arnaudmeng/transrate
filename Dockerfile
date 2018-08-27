@@ -1,5 +1,5 @@
-# Set the base image to Ubuntu 16.04 
-FROM ubuntu:16.04
+# Set the base image 
+FROM centos:6
 
 # File Author / Maintainer 
 MAINTAINER Arnaud Meng <arnaud.meng@gmail.com>
