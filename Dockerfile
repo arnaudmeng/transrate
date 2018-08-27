@@ -20,5 +20,8 @@ RUN tar xvf transrate-1.0.3-linux-x86_64.tar.gz
 RUN chmod a+xr -R /usr/bin/transrate-1.0.3-linux-x86_64/
 RUN /usr/bin/transrate-1.0.3-linux-x86_64/transrate --install-deps ref
 
+# add to path
+export PATH="/user/bin/transrate-1.0.3-linux-x86_64:$PATH"
+
 # clean
 RUN apt-get clean
