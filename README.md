@@ -49,4 +49,4 @@ docker run \
 -v /local/working/dir:/container/working/dir \
 -i \
 -t arnaudmeng/transrate:1.0.3 /bin/bash \
--c "transrate --assembly=/container/working/dir/Transcripts.fasta --left=/container/working/dir/left.fq --right=/container/working/dir/right.fq"```
+-c "transrate --assembly=/container/working/dir/Transcripts.fasta --left=/container/working/dir/left.fq --right=/container/working/dir/right.fq --output=/mnt/"```
