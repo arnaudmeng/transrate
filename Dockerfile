@@ -24,12 +24,5 @@ RUN /usr/bin/transrate-1.0.3-linux-x86_64/transrate --install-deps ref
 ENV PATH="/usr/bin/transrate-1.0.3-linux-x86_64:${PATH}"
 ENV PATH="/usr/bin/transrate-1.0.3-linux-x86_64/bin:${PATH}"
 
-
-# setting directory permissions
-ADD id_rsa.pub /home/ubuntu/.ssh/authorized_keys
-
-RUN chown -R ubuntu:ubuntu /home/ubuntu/.ssh
-RUN chmod -R 700 /home/ubuntu/.ssh
-
 # clean
 RUN apt-get clean
