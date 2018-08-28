@@ -39,3 +39,14 @@ OPTIONS:
   --install-deps=<s>        Install any missing dependencies. One of [ref]
   --examples                Show some example commands with explanations
 ```
+
+# Running Transrate in docker container:
+
+Assuming that your data are localized in "/local/working/dir" on your host machine
+
+```h
+docker run \
+-v /local/working/dir:/container/working/dir \
+-i \
+-t arnaudmeng/transrate:1.0.3 /bin/bash \
+-c "transrate --assembly=/container/working/dir/Transcripts.fasta --left=/container/working/dir/left.fq --right=/container/working/dir/right.fq"```
