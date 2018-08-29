@@ -13,11 +13,11 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y ruby
 WORKDIR /usr/bin/
 
 # download binary & untar/uncompress
-RUN wget  --no-check-certificate https://bintray.com/artifact/download/blahah/generic/transrate-1.0.3-linux-x86_64.tar.gz
+RUN wget --no-check-certificate https://bintray.com/artifact/download/blahah/generic/transrate-1.0.3-linux-x86_64.tar.gz
 
 # install
 RUN tar xvf transrate-1.0.3-linux-x86_64.tar.gz
-RUN chmod a+xr -R /usr/bin/transrate-1.0.3-linux-x86_64/
+RUN chmod 777 -R /usr/bin/transrate-1.0.3-linux-x86_64/
 RUN /usr/bin/transrate-1.0.3-linux-x86_64/transrate --install-deps ref
 
 # add to path
