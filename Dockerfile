@@ -17,7 +17,7 @@ RUN wget --no-check-certificate https://bintray.com/artifact/download/blahah/gen
 
 # install
 RUN tar xvf transrate-1.0.3-linux-x86_64.tar.gz
-RUN chmod 777 -R /usr/bin/transrate-1.0.3-linux-x86_64/
+RUN chmod a+xr -R /usr/bin/transrate-1.0.3-linux-x86_64/
 RUN /usr/bin/transrate-1.0.3-linux-x86_64/transrate --install-deps ref
 
 # add to path
